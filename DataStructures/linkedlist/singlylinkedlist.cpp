@@ -77,7 +77,7 @@ class linkedList{
         }
         previous->next = current->next;
         delete current;
-        cout << "node delelted"<<endl;
+        cout << "node deleted"<<endl;
     }
 
     void insert(int position,int data){

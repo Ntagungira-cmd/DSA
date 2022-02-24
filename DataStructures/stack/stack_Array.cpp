@@ -22,8 +22,8 @@ int isEmpty(){
 
 void push(int data){
     if(!isFull()){
-    top++;
-    stack[top]=data;
+        top++;
+        stack[top]=data;
     }else{
         cout<<"Stack overflow"<<endl;
     }
