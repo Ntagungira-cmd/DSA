@@ -27,5 +27,5 @@ int countDigit(long long int num, int token){
 }
 
 int main(){
-    cout<<countDigit(-33331, 3)<<endl;
+    cout<<countDigit(33331, 3)<<endl;
 }
