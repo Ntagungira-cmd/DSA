@@ -1,5 +1,5 @@
 // Finds maximum occurring digit without using any array/string
-#include <bits/stdc++.h>
+#include <iostream>
 using namespace std;
 
 // Simple function to count occurrences of digit d in x
@@ -51,6 +51,6 @@ return result;
 int main()
 {
 	long int x = 12233555;
-	cout << "Max occurring digit is " << maxOccurring(x);
+	cout << "Max occurring digit is " << findMaxOccurring(x);
 	return 0;
 }
