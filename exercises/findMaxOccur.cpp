@@ -6,8 +6,7 @@ using namespace std;
 int countOccurrences(long int x, int d)
 {
 	int count = 0; // Initialize count of digit d
-	while (x)
-	{
+	while (x){
 		// Increment count if current digit is same as d
 		if (x%10 == d)
 		count++;
