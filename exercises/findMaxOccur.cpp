@@ -37,11 +37,11 @@ for (int d=0; d<=9; d++)
 		max_count = count;
 		result = d;
     }
- if (count == max_count)
-	{
-		max_count = count;
-		result = -1;
-    }
+//  if (count == max_count)
+// 	{
+// 		max_count = count;
+// 		result = -1;
+//     }
 }
 return result;
 }

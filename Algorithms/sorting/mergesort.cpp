@@ -4,8 +4,7 @@ using namespace std;
 // Merges two subarrays of array[].
 // First subarray is arr[begin..mid]
 // Second subarray is arr[mid+1..end]
-void merge(int array[], int begin, int mid, int end)
-{   
+void merge(int array[], int begin, int mid, int end){   
     cout<<"Merge Begins"<<endl;
 	int sizeOfleftArr = mid - begin + 1;
 	int sizeOfRightArr = end - mid;
@@ -55,8 +54,7 @@ void merge(int array[], int begin, int mid, int end)
 // begin is for left index and end is
 // right index of the sub-array
 // of arr to be sorted */
-void mergeSort(int array[], int begin, int end)
-{
+void mergeSort(int array[], int begin, int end){
     cout<<"Beginning mergeSort"<<endl;
 	if (begin >= end)
 		return; // Returns recursively
@@ -71,7 +69,7 @@ void mergeSort(int array[], int begin, int end)
 // Function to print an array
 void printArray(int A[], int size)
 {
-	for (auto i = 0; i < size; i++)
+	for (int i = 0; i < size; i++)
 		cout << A[i] << " ";
 }
 
@@ -79,7 +77,7 @@ void printArray(int A[], int size)
 int main()
 {
 	int arr[] = { 12, 11, 13, 5, 6, 7 ,};
-    auto arr_size = sizeof(arr) / sizeof(arr[0]);
+    int arr_size = sizeof(arr) / sizeof(arr[0]);
   
     cout << "Given array is \n";
     printArray(arr, arr_size);
