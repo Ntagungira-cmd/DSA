@@ -22,7 +22,7 @@ class adjMatrix{
             for(int j=0; j<nodes; j++)
                 cout<<matrix[i][j]<<"   ";
             cout<<""<<endl;
-        }
+        }`
     }
     void addEdge(int origin, int dest) {
         if(origin<0||dest<0||origin>nodes||dest>nodes){
