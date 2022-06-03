@@ -20,9 +20,9 @@ class adjMatrix{
     void display(){
         for(int i=0;i<nodes; i++){
             for(int j=0; j<nodes; j++)
-                cout<<matrix[i][j]<<"   ";
+                cout<<matrix[i][j]<<" ";
             cout<<""<<endl;
-        }`
+        }
     }
     void addEdge(int origin, int dest) {
         if(origin<0||dest<0||origin>nodes||dest>nodes){
@@ -30,7 +30,7 @@ class adjMatrix{
           return;
         }
         matrix[origin][dest] = 1;
-        // matrix[dest][origin] = 1;
+        matrix[dest][origin] = 1;
   }
 
   void removeEdge(int origin, int dest) {
@@ -39,7 +39,7 @@ class adjMatrix{
           return;
         }
         matrix[origin][dest] = 0;
-        // matrix[dest][origin] = 0;
+        matrix[dest][origin] = 0;
   }
 };
 
@@ -47,7 +47,7 @@ int main() {
   adjMatrix graph(4);
   graph.display();
   cout<<"add edge to graph"<<endl;
-  graph.addEdge(1,1);
+  graph.addEdge(1,0);
   graph.display();
   cout<<"remove edge to graph"<<endl;
   graph.removeEdge(1,1);

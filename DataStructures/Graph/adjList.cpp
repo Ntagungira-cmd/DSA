@@ -22,6 +22,7 @@ class Graph{
             cout<<endl;
         }
     }
+
     void addEdge(int origin, int dest){
         adjList[origin].push_back(dest);
         adjList[dest].push_back(origin);
@@ -46,6 +47,6 @@ class Graph{
 
 int main(){
 Graph list(5);
-list.addEdge(0,1);
+list.addEdge(1,1);
 list.display();
 }
