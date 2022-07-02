@@ -64,6 +64,8 @@ class linkedList{
            size++;
            current = current->next;
         }
+        // cout<<current<<endl;
+        // cout<<"End of sizing"<<endl;
         if(size< position){
             cout << "Invalid position"<<endl;
             return;
@@ -75,8 +77,11 @@ class linkedList{
             previous = current;
             current = current->next;
         }
-        previous->next = current->next;
         delete current;
+        // cout<<previous->next->data<<endl;
+        // previous->next = current->next;
+        // cout<<previous->next->data<<endl;
+        
         cout << "node deleted"<<endl;
     }
 
@@ -142,9 +147,13 @@ int main(){
     linkedList list;
     list.addNewNode(12);
     list.addNewNode(8);
+    list.addNewNode(10);
+    list.addNewNode(15);
     list.addNewNode(45);
     list.addNewNode(30);
-    cout<<"****** After Adding ******"<<endl;
+    //list.deleteNode(3);
+    list.insert(2,100);
+    // cout<<"****** After Adding ******"<<endl;
     list.display();
     // list.insert(2,90);
     // cout<<"****** After inserting ******"<<endl;
