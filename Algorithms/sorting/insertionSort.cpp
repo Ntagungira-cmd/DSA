@@ -12,6 +12,9 @@ int main(){
             arr1[j+1]=arr1[j];
             j=j-1;
         };
+        // 
+        
+        
         arr1[j+1]=key;
    };
    for (int k=0; k<len;k++){
